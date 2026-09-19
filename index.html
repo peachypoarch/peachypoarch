@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#effff7" />
+  <meta name="description" content="Farhan Arinata — Personal Archive, an interactive 3D web experience." />
+  <title>Farhan Arinata — Personal Archive</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body data-scene="0">
+  <canvas id="bg"></canvas>
+  <div id="hand-stage" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+  <div id="film-grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a href="#s0" class="logo">FA<span>.</span></a>
+    <div class="top-center">
+      <span>PERSONAL ARCHIVE</span><i></i><span>SEP 2026</span>
+    </div>
+    <button id="audioBtn" class="audio-btn" type="button">SOUND OFF</button>
+  </header>
+
+  <aside class="scene-index" aria-label="Scene navigation">
+    <a href="#s0">01</a><a href="#s1">02</a><a href="#s2">03</a><a href="#s3">04</a>
+    <a href="#s4">05</a><a href="#s5">06</a><a href="#s6">07</a><a href="#s7">08</a>
+  </aside>
+
+  <main>
+    <section id="s0" class="scene intro" data-scene="0">
+      <div class="ink-ring" aria-hidden="true"><span></span></div>
+      <div class="scene-copy center-copy">
+        <p class="kicker">FARHAN ARINATA / PERSONAL ARCHIVE</p>
+        <h1>What if a website<br>could feel like a <em>memory?</em></h1>
+        <p class="sub">Move your cursor. The archive reacts to you.</p>
+        <div class="hold-wrap">
+          <button id="holdBtn" class="hold-btn" type="button">
+            <span class="hold-progress"></span>
+            <b>PRESS & HOLD TO ENTER</b>
+          </button>
+        </div>
+      </div>
+      <div class="micro micro-left">ME / 02.09.2026</div>
+      <div class="micro micro-right">SCROLL TO CONTINUE ↓</div>
+    </section>
+
+    <section id="s1" class="scene believed" data-scene="1">
+      <div class="floating-glyph g1">F</div><div class="floating-glyph g2">A</div><div class="floating-glyph g3">+</div>
+      <div class="scene-copy display-copy">
+        <p class="kicker">CHAPTER 01 / AFTER GRADUATION</p>
+        <h2>You <span>believed</span><br>there was more.</h2>
+        <p class="sub narrow">Work. Further education. A career worth building. A life that still has no final shape.</p>
+      </div>
+      <div class="pillbar"><i></i><b>01 / 08</b><span>DRAG / SCROLL</span></div>
+    </section>
+
+    <section id="s2" class="scene words" data-scene="2">
+      <div class="words-orbit" aria-hidden="true">
+        <span style="--x:11%;--y:25%">work</span>
+        <span style="--x:29%;--y:12%">further education</span>
+        <span style="--x:73%;--y:20%">career</span>
+        <span style="--x:81%;--y:56%">independence</span>
+        <span style="--x:56%;--y:77%">mistakes</span>
+        <span style="--x:15%;--y:70%">becoming</span>
+        <span style="--x:44%;--y:43%">what comes next?</span>
+      </div>
+      <div class="scene-copy left-bottom">
+        <p class="kicker">CHAPTER 02 / THE LITTLE THINGS</p>
+        <h2>I think about<br><span>everything.</span></h2>
+        <p class="sub narrow">Sometimes the future. Sometimes a haircut, a photograph, a caption, or a message I still haven't sent.</p>
+      </div>
+    </section>
+
+    <section id="s3" class="scene meadow" data-scene="3">
+      <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+      <div class="flower-card fc1"><img src="./assets/images/flower.jpeg" alt="" /></div>
+      <div class="flower-card fc2"><img src="./assets/images/flower.jpeg" alt="" /></div>
+      <div class="scene-copy center-copy dark-copy">
+        <p class="kicker">CHAPTER 03 / SENTIMENTAL THINGS</p>
+        <h2>Small things<br><span>stay longer.</span></h2>
+        <p class="sub narrow">Certain songs. Old photographs. Places. Ordinary moments that become important only after they are gone.</p>
+      </div>
+      <div class="petals" id="petals" aria-hidden="true"></div>
+    </section>
+
+    <section id="s4" class="scene xp" data-scene="4">
+      <div class="xp-ring">
+        <div class="xp-core"><span>+</span><b>100</b><small>XP</small></div>
+      </div>
+      <div class="scene-copy xp-copy">
+        <p class="kicker">MILESTONE UNLOCKED</p>
+        <h2>Mechanical Engineering<br><span>graduate.</span></h2>
+        <p class="sub narrow">The degree is finished. The becoming isn't.</p>
+      </div>
+      <div class="achievement">
+        <span>ACHIEVEMENT</span><b>Made it through one chapter.</b>
+      </div>
+    </section>
+
+    <section id="s5" class="scene red" data-scene="5">
+      <div class="red-beam rb1"></div><div class="red-beam rb2"></div>
+      <div class="scene-copy red-copy">
+        <p class="kicker">CHAPTER 05 / DOUBT</p>
+        <h2>But—</h2>
+        <h3>certainty is<br><span>not guaranteed.</span></h3>
+        <p class="sub narrow">I question whether I'm making the right decisions. Whether I'm trying too hard. Whether I'm doing enough.</p>
+      </div>
+      <div class="warning-label">CAUTION / SELF-DOUBT DETECTED</div>
+    </section>
+
+    <section id="s6" class="scene system" data-scene="6">
+      <div class="scanner-ui" aria-hidden="true">
+        <div class="scanner-ring r1"></div>
+        <div class="scanner-ring r2"></div>
+        <div class="scanner-ring r3"></div>
+        <div class="scanner-dot"></div>
+      </div>
+      <div class="scene-copy system-copy">
+        <p class="kicker">CHAPTER 06 / STILL MOVING</p>
+        <h2>And that's<br><span>why I move.</span></h2>
+        <p class="sub narrow">Build a career. Become independent. Try things that scare me. Meet people. Make mistakes. Learn. Keep moving.</p>
+      </div>
+      <div class="system-notes">
+        <span>STATUS / IN PROGRESS</span>
+        <span>IDENTITY / UNFINISHED</span>
+        <span>DIRECTION / FORWARD</span>
+      </div>
+    </section>
+
+    <section id="s7" class="scene memory" data-scene="7">
+      <div class="memory-bill bill-a">
+        <div class="bill-no">MEMORY / 01</div>
+        <img src="./assets/images/mom-and-me.jpeg" alt="Farhan with his mother" />
+        <div class="bill-caption"><small>MY FIRST HOME</small><b>Some people become part of who we are.</b></div>
+      </div>
+      <div class="memory-bill bill-b">
+        <img src="./assets/images/flower.jpeg" alt="Black and white bouquet" />
+        <div class="bill-caption"><small>FRAGMENT / 02</small><b>For what is difficult to say out loud.</b></div>
+      </div>
+
+      <div class="scene-copy memory-copy">
+        <p class="kicker">FINAL CHAPTER / THE ARCHIVE</p>
+        <h2>I'm not entirely sure<br>who I'll be yet.</h2>
+        <h3>But I'd like to <span>find out.</span></h3>
+        <button id="archiveBtn" class="archive-btn">OPEN THE FULL ARCHIVE ↗</button>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="archiveDialog" class="archive-dialog">
+    <button id="closeArchive" class="close-archive" aria-label="Close archive">×</button>
+    <div class="archive-paper">
+      <p class="archive-kicker">FARHAN ARINATA / ENTRY 02.09.2026</p>
+      <h2>Me on September 2, 2026</h2>
+
+      <p>I'm still figuring things out.</p>
+
+      <p>I just graduated Mechanical Engineering, and lately I've been thinking a lot about what comes next—work, further education, the kind of career I want, and eventually, the kind of life I want to build.</p>
+
+      <p>I tend to think about things more than I probably need to. Sometimes it's something important, like my future. Other times it's something ridiculously small—a haircut, a photograph, a caption, or a message I haven't sent yet.</p>
+
+      <p>I guess I've always cared about the little things.</p>
+
+      <p>I'm also quite sentimental, although I don't always show it. Certain songs, old photographs, places, and seemingly ordinary moments tend to stay with me longer than I expect them to.</p>
+
+      <p>And some people do too.</p>
+
+      <p>There are parts of my past that I still think about from time to time. Not necessarily because I want to return to them, but because I think some people and moments simply become part of who we are.</p>
+
+      <p>I question myself a lot.</p>
+
+      <p>Whether I'm making the right decisions. Whether I'm trying too hard. Whether I'm doing enough. Whether the person I'm becoming is actually someone I'd be proud of.</p>
+
+      <p>I don't have all of those answers yet.</p>
+
+      <p>What I do know is that I want to keep moving forward. I want to build a good career, become independent, try things that scare me a little, meet people, make mistakes, learn from them, and hopefully become a little better along the way.</p>
+
+      <p>Maybe that's what this website is for.</p>
+
+      <p>Not to present a finished version of myself, but to keep small pieces of who I was while I'm still figuring out who I want to become.</p>
+
+      <p>I'm not entirely sure who I'll be yet.</p>
+
+      <p>But I'd like to find out.</p>
+    </div>
+  </dialog>
+
+  <audio id="ambient" loop preload="auto" src="./assets/audio/archive-ambient.wav"></audio>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
